@@ -2,8 +2,8 @@
 title: Site Number One
 email: gabriel.casalett@lgfcu.org
 description: None
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/jekyll-forestry-test" # the subpath of your site, e.g. /blog/
+url: "https://gcasalett.github.io" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
