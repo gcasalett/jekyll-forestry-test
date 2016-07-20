@@ -1,0 +1,42 @@
+.hero-full-width {
+  background: transparent url('../img/main-bg.jpg') center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  & .hero-content {
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+
+    & h2 {
+      color: #fff;
+      font-size: $ms8;
+      font-weight: 300;
+      text-shadow: 0 1px 3px #666;
+      line-height: $ms10;
+    }
+
+    & .button-main {
+      animation-delay: 1s;
+      background: #fff;
+      border-radius: 3px;
+      color: #333;
+      font-size: $ms1;
+      padding: 10px 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all, .2s ease-in-out;
+
+      &:hover {
+        background: rgba(255,255,255,.3);
+        color: #fff;
+        text-shadow: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  &-home {
+    background: transparent url('../img/home-bg.jpg') top right no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding-top: 110px;
+  }
+
+  &-content {
+    @include j-center(1100px);
+  }
+
+  &-nav {
+    @include j-column(1/2);
+    text-align: right;
+  }
+
+}

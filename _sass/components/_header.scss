@@ -1,0 +1,89 @@
+header.site-header {
+  height: 60px;
+  background: transparent;
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.branding {
+  @include j-column(1/2);
+
+  & img {
+    height: 50px;
+    width: auto;
+  }
+}
+
+
+//nav
+
+#main-nav {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  animation: opacity .2s ease;
+  z-index: 0;
+}
+
+.nav-wrapper {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,.6);
+  transition: all .3s ease;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+
+  & .navigation {
+    list-style-type: none;
+    padding: 0;
+    font-weight: bold;
+  }
+}
+
+.navigation > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 3rem;
+  line-height: 4.8rem;
+
+}
+
+.hamburger, .close-nav {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  transition: transform .2s ease;
+}
+
+.close-nav {
+  position: absolute;
+  right: 30px;
+}
+
+.show {
+  opacity: 1;
+  display: block !important;
+  visibility: visible;
+  animation: opacity .2s ease;
+}
+
+.hide {
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+  animation: opacity .2s ease;
+}
