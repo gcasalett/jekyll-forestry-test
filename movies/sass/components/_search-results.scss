@@ -1,0 +1,75 @@
+#results {
+  @include j-cf();
+}
+
+.result-table-heading {
+  background-color: $dark-gray;
+  color: #fff;
+  padding: 4px 20px !important;
+  font-family: $headline-font;
+}
+
+.catalog-list, .search-result {
+  @include j-cf();
+  width: 100%;
+  display: block;
+
+  &:nth-child(odd) {
+    background-color: $blue-lightest;
+  }
+}
+
+%list-span {
+  float: left;
+  padding: 9px 20px;
+  border-right: 1px solid #fff;
+  line-height: 35px;
+}
+
+.catalog-list span {
+  @extend %list-span;
+  min-width: 20%;
+
+  &:last-child {
+    border-right: 0;
+    min-width: 20%;
+    text-align: center;
+  }
+}
+
+.movie-title {
+  width: 40%;
+}
+
+// Search results page
+.search-result span {
+  @extend %list-span;
+
+  &:last-child() {
+    border: 0;
+    width: 100%;
+  }
+
+  &.movie-title {
+    width: 40%;
+  }
+
+  &.media-type, &.movie-release-date, &.button-wrap {
+    width: 15%;
+  }
+}
+
+.button-wrap {
+  text-align: center;
+}
+
+.movie-synopsis {
+  display: none;
+  line-height: $desktop-leading !important;
+  margin-bottom: 20px;
+
+  @include breakpoint(md) {
+    max-width: 60%;
+    margin-left: 40%;
+  }
+}

@@ -1,0 +1,58 @@
+.tabs {
+  @include j-cf();
+  margin-bottom: 30px;
+
+  @include breakpoint(md) {
+    position: absolute;
+    top: -40px;
+    right: 10px;
+  }
+}
+
+.tabs ul {
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+
+  & li {
+    background-color: #fff;
+    display: inline;
+    width: 50%;
+    margin: 0;
+    text-align: center;
+    float: left;
+    transition: all .2s ease-in-out;
+
+    &.inactive {
+      background-color: $gray;
+      box-shadow: none;
+    }
+
+    & a {
+      padding: 10px;
+      display: inline-block;
+      color: $color-text;
+      font-family: $main-font;
+      text-decoration: none;
+      transition: all .1s ease-in-out;
+    }
+
+    @include breakpoint(md) { // li
+      width: auto;
+      margin-left: 10px;
+      border-top-right-radius: 2px;
+      border-top-left-radius: 2px;
+      box-shadow: 2px 0px 2px -1px rgba(0,0,0,.12);
+
+      & a {
+        padding: 10px 20px;
+      }
+
+      &.inactive:hover {
+        padding-bottom: 3px;
+        margin-top: -3px;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.modal {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+  opacity: 0;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+
+  & fieldset {
+    border: 0;
+  }
+}
+
+.modal:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal-content {
+  width: 40%;
+  width: 40vw;
+  position: relative;
+  margin: 5% auto;
+  padding: 20px;
+  border: 4px solid $blue;
+  border-radius: 4px;
+  background: #fff;
+
+  & h2 {
+    margin: 10px 0 0 10px;
+  }
+
+  & a.close {
+    float: right;
+    color: #fff;
+    & .fa-circle {
+      color: $red;
+    }
+    & .fa-remove {
+      line-height: 30px !important;
+    }
+  }
+}

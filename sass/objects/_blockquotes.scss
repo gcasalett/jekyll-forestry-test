@@ -1,0 +1,15 @@
+blockquote {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  margin: 40px auto;
+  text-align: center;
+  font-style: italic;
+  padding: 20px;
+
+  & span.by {
+    display: block;
+    font-style: normal;
+    text-align: right;
+    font-weight: bold;
+  }
+}

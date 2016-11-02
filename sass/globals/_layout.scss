@@ -1,0 +1,61 @@
+// Containers
+.content-wrapper {
+  @include j-center(100%);
+  padding: 20px;
+
+  @include breakpoint(md) {
+    padding: 0;
+  }
+
+}
+
+.content-container {
+  padding: 0;
+
+  @include breakpoint(sm) {
+    @include j-center(800px);
+    padding: 0;
+  }
+}
+
+.main-right {
+  @include j-cf();
+  @include j-stack();
+  background: #fff;
+  margin-top: 40px;
+  padding: 0;
+  padding-top: 0;
+
+  & .tab-content {
+    padding: 20px;
+    padding-top: 5px;
+  }
+
+  @include breakpoint(md) {
+    @include j-column(7/12);
+    margin-top: 0;
+  }
+}
+
+.sidebar-left {
+  @include j-stack();
+
+  @include breakpoint(md) {
+    @include j-column(5/12);
+  }
+}
+// Grid
+.col-wrap {
+  @include j-cf();
+}
+
+// Clearfix
+.clearfix {
+  @include j-cf();
+}
+
+.hide {
+  opacity: 0;
+  position: absolute;
+  top: -9999px;
+}

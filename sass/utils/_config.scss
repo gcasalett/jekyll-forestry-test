@@ -1,0 +1,94 @@
+// ==========================================================================
+// $Variables
+// ==========================================================================
+
+// $Colors
+// ==========================================================================
+$redish: #D23D3B;
+$brown: #613629;
+$teal: #1CBAAF;
+$cream: #F8AB65;
+$whiteish: #F3F1E0;
+
+$gray-dark: #333;
+
+$color-text: $gray-dark;
+
+// $Breakpoints
+// ==========================================================================
+$breakpoints: (
+	'xs': 300px,
+	'sm': 600px,
+  'md': 800px,
+	'lg': 1000px
+);
+
+// $Fonts
+// ==========================================================================
+$main-font: "quatro-slab",serif;
+$sans-font: "prenton",sans-serif;
+
+
+// $Font-sizes (Modular Scale)
+// ==========================================================================
+// $ms10: 4.209rem;
+// $ms9: 3.553rem;
+// $ms8: 3.157rem;
+// $ms7: 2.665rem;
+// $ms6: 2.369rem;
+// $ms5: 1.999rem;
+// $ms4: 1.777rem;
+// $ms3: 1.5rem;
+// $ms2: 1.333rem;
+// $ms1: 1.125rem;
+// $ms0: 1rem;
+// $ms-1: 0.844rem;
+// $ms-2: 0.75rem;
+// $ms-3: 0.633rem;
+
+// Golden Ratio ftw
+$ms5: 11.089em;
+$ms4: 6.854em;
+$ms3: 4.236em;
+$ms2: 2.618em;
+$ms1: 1.618em;
+$ms0: 1em;
+$ms-1: 0.618em;
+
+
+// $Box-shadows
+// ==========================================================================
+$box-shadow-level-1: 1px 2px 2px 0 rgba(0,0,0,.12), 0 3px 2px -2px rgba(0,0,0,.12); // most elements
+$box-shadow-level-2: 0 5px 9px 0 rgba(0,0,0,0.18), 0 4px 13px 0 rgba(0,0,0,0.15); // hover state for buttons
+
+
+// $Easings
+// ==========================================================================
+// Taken from Easings.net
+$easeInSine:       cubic-bezier(0.47, 0, 0.745, 0.715);
+$easeOutSine:      cubic-bezier(0.39, 0.575, 0.565, 1);
+$easeInOutSine:    cubic-bezier(0.39, 0.575, 0.565, 1);
+
+$easeInQuad:       cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$easeOutQuad:      cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$easeInOutQuad:    cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+$easeInCubic:      cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$easeOutCubic:     cubic-bezier(0.215, 0.61, 0.355, 1);
+$easeInOutCubic:   cubic-bezier(0.215, 0.61, 0.355, 1);
+
+$easeInQuart:      cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$easeOutQuart:     cubic-bezier(0.165, 0.84, 0.44, 1);
+$easeInOutQuart:   cubic-bezier(0.165, 0.84, 0.44, 1);
+
+$easeInQuint:      cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$easeOutQuint:     cubic-bezier(0.23, 1, 0.32, 1);
+$easeInOutQuint:   cubic-bezier(0.23, 1, 0.32, 1);
+
+$easeInExpo:       cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$easeOutExpo:      cubic-bezier(0.19, 1, 0.22, 1);
+$easeInOutExpo:    cubic-bezier(0.19, 1, 0.22, 1);
+
+$easeInCirc:       cubic-bezier(0.6, 0.04, 0.98, 0.335);
+$easeOutCirc:      cubic-bezier(0.075, 0.82, 0.165, 1);
+$easeInOutCirc:    cubic-bezier(0.075, 0.82, 0.165, 1);
