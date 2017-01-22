@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      Hello!
+    </header>
+
+    <form id="searchForm" method="GET" action="results.html">
+      <ul class="search-form">
+        <li>
+          <input type="text" name="movieSearch" id="movieSearch">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </li>
+      </ul>
+    </form>
+
+    <h2>Catalog</h2>
+    <div class="catalog-wrap" id="catalogWrap">
+      <div class="catalog-list">
+        <span class="result-table-heading movie-title">Title</span>
+        <span class="result-table-heading movie-fomat">Format</span>
+        <span class="result-table-heading movie-dvd-type">DVD type</span>
+        <span class="result-table-heading remove-link-button">&nbsp;</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCLWT-S8AdIqYMGJA73K5LmZDtU4Xh3mRc",
+    authDomain: "movie-catalog-4c201.firebaseapp.com",
+    databaseURL: "https://movie-catalog-4c201.firebaseio.com",
+    storageBucket: "",
+  };
+  firebase.initializeApp(config);
+  </script>
+  <script src="js/lib/jquery-2.2.4.min.js"></script>
+  <script src="js/search.js" charset="utf-8"></script>
+  <script src="js/catalog.js" charset="utf-8"></script>
+</body>
+</html>

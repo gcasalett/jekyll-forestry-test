@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1><i class="fa fa-gift"></i> Search Results for <span class="search-results-title"></span></h1>
+    <form id="searchForm" method="GET" action="results.html">
+      <ul class="search-form">
+        <li>
+          <input type="text" name="movieSearch" id="movieSearch">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </li>
+      </ul>
+    </form>
+    <a href="index.html">&laquo; Back</a>
+
+    <div id="results">
+      <div class="search-result">
+        <span class="result-table-heading movie-title">Title</span>
+        <span class="result-table-heading media-type">Media type</span>
+        <span class="result-table-heading movie-release-date">Release date</span>
+        <span class="result-table-heading button-wrap">&nbsp;</span>
+        <span class="result-table-heading button-wrap">&nbsp;</span>
+      </div>
+    </div>
+
+    <div id="addMovie" class="modal">
+      <div class="modal-content">
+        <a href="#close" title="Close" class="close">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-remove fa-stack-1x"></i>
+          </span>
+        </a>
+        <h2>Add new</h2>
+        <form id="pushToCatalog" method="GET" action="success.html">
+          <fieldset>
+            <input type="hidden" id="newMovieDateAdded" val="">
+            <ul class="modal-form">
+              <li>
+                <label for="title">Title:</label>
+                <input type="text"id="newMovieTitle" name="title">
+              </li>
+              <li>
+                <label for="type">Type:</label>
+                <input type="text" id="newMovieType" name="type">
+              </li>
+              <li>
+                <label for="releaseDate">Release Date:</label>
+                <input type="text" id="newMovieReleased" name="releaseDate"></span>
+              </li>
+              <li>
+                <label for="format">Format:</label>
+                <select name="format" id="format">
+                  <option disabled selected value> -- select one -- </option>
+                  <option value="DVD">DVD</option>
+                  <option value="Amazon Video">Amazon Video</option>
+                  <option value="Blueray">Blueray</option>
+                  <option value="Blueray + DVD">Blueray + DVD</option>
+                </select>
+              </li>
+              <li class="dvd-type-field">
+                <label for="dvd-type">DVD type</label>
+                <select name="dvd-type" id="">
+                  <option value="Original">Original</option>
+                  <option value="Copy">Copy</option>
+                  <option value="Iraqi">Iraqi</option>
+                </select>
+              </li>
+              <button type="submit"><i class="fa fa-check"></i>&nbsp;Go!</button>
+            </ul>
+          </fieldset>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCLWT-S8AdIqYMGJA73K5LmZDtU4Xh3mRc",
+      authDomain: "movie-catalog-4c201.firebaseapp.com",
+      databaseURL: "https://movie-catalog-4c201.firebaseio.com",
+      storageBucket: "",
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="js/lib/jquery-2.2.4.min.js"></script>
+  <script src="js/search.js" charset="utf-8"></script>
+</body>
+</html>
